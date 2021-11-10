@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leave Status</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="header">
+    <h2 id="heading">Leave List</h2>
+  </div>
+  <div id="container">
+    <div class="left">
+      <a href="../Dashboard/index.html">
+        <h2 id="dash">Dashboard</h2>
+      </a>
+      <ul>
+        <div>
+          <li id="Employee"><a href="../EmployeeDetails/index.html">Employee</a></li>
+        </div>
+        <div>
+          <li id="leave"><a href="#">Leave</a></li>
+        </div>
+        <div>
+          <li id="grievance"><a href="../Grievance/index.html">Grievance</a></li>
+        </div>
+        <div>
+          <li id="team"><a href="../Teams/index.html">Teams</a></li>
+        </div>
+        <div>
+          <li id="project"><a href="../Project/index.html">Project</a></li>
+        </div>
+        <div>
+          <li id="attendance"><a href="../Attendance/index.html">Attendance</a></li>
+        </div>
+      </ul>
+    </div>
+    <table class="table table-striped table-hover">
+      <tr>
+        <th>Sno.</th>
+        <th>EID</th>
+        <th>Employee Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Reason</th>
+        <th>Status</th>
+        <th>Check</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>191500246</td>
+        <td>Deepam Asnani</td>
+        <td>2021-10-20</td>
+        <td>2021-10-25</td>
+        <td>Dengue</td>
+        <td id="ch1">Pending</td>
+        <td>
+          <button class="acc" id="acc">Accept</button>
+          <button id="rej">Reject</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>191500260</td>
+        <td>Devendra Srivastava</td>
+        <td>2021-10-26</td>
+        <td>2021-10-28</td>
+        <td>Out of town</td>
+        <td id="ch2">Pending</td>
+        <td>
+          <button class="acc" id="acc1">Accept</button>
+          <button id="rej1">Reject</button>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>191500406</td>
+        <td>Krishan Chandra Pandey</td>
+        <td>2021-10-15</td>
+        <td>2021-10-19</td>
+        <td>Marriage</td>
+        <td id="ch3">Pending</td>
+        <td>
+          <button class="acc" id="acc2">Accept</button>
+          <button id="rej2">Reject</button>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>191500255</td>
+        <td>Akansha Bhadauriya</td>
+        <td>2021-10-25</td>
+        <td>2021-10-30</td>
+        <td>Sick Leave</td>
+        <td id="ch4">Pending</td>
+        <td>
+          <button class="acc" id="acc3">Accept</button>
+          <button id="rej3">Reject</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

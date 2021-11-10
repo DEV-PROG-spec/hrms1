@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Team", "Number of employees"],
+        ["Coding Team", 5],
+        ["Testing Team", 5],
+        ["Advertising Team", 4],
+      ]);
+
+      var options = {
+        title: "Employees",
+      };
+
+      var chart = new google.visualization.PieChart(
+        document.getElementById("piechart")
+      );
+
+      chart.draw(data, options);
+    }
+  </script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Year", "Revenue", { role: "style" }],
+        ["2017", 18000000, "#b87333"],
+        ["2018", 17500000, "silver"],
+        ["2019", 20000000, "gold"],
+        ["2020", 21450000, "color: #e5e4e2"],
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([
+        0,
+        1,
+        {
+          calc: "stringify",
+          sourceColumn: 1,
+          type: "string",
+          role: "annotation",
+        },
+        2,
+      ]);
+
+      var options = {
+        title: "Revenue",
+        width: 600,
+        height: 400,
+        bar: { groupWidth: "95%" },
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById("columnchart_values")
+      );
+      chart.draw(view, options);
+    }
+  </script>
+</head>
+
+<body>
+  <div id="header">
+    <h1>HR Management System</h1>
+    <a href="../login/index.html" id="logout"><i class="fas fa-sign-out-alt"></i></a>
+  </div>
+  <div id="section">
+    <div class="left">
+      <a href="#">
+        <h2 id="dash">Dashboard</h2>
+      </a>
+      <ul>
+        <div>
+          <li id="Employee"><a href="../EmployeeDetails/index.html">Employee</a></li>
+        </div>
+        <div>
+          <li id="leave"><a href="../Leave/index.html">Leave</a></li>
+        </div>
+        <div>
+          <li id="grievance"><a href="../Grievance/index.html">Grievance</a></li>
+        </div>
+        <div>
+          <li id="team"><a href="../Teams/index.html">Teams</a></li>
+        </div>
+        <div>
+          <li id="project"><a href="../Project/index.html">Project</a></li>
+        </div>
+        <div>
+          <li id="attendance"><a href="../Attendance/index.html">Attendance</a></li>
+        </div>
+      </ul>
+    </div>
+    <div id="cards">
+      <a href="../EmployeeDetails/index.html">
+        <div class="square" id="card1">
+          <h1>Employee</h1>
+          <h3>14 Employees</h3>
+          <i id="people" class="fas fa-user-friends"></i>
+        </div>
+      </a>
+
+      <div class="square" id="card2">
+        <h1>Partners</h1>
+        <h3>450 partners</h3>
+        <i id="people" class="far fa-handshake"></i>
+      </div>
+      <a href="../Project/index.html">
+
+        <div class="square" id="card3">
+          <h1>Projects</h1>
+          <h3>10 active projects</h3>
+          <i id="people" class="fas fa-chart-pie"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div id="piechart" style="width: 500px; height: 500px"></div>
+  <div id="columnchart_values" style="width: 500px; height: 300px"></div>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <style>
+      body {
+        background-image: url("bg3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      h1 {
+        font-family: sans-serif;
+        text-align: left;
+        color: rgb(255, 255, 255);
+      }
+
+      #heading {
+        margin-top: -1%;
+        width: 99.5%;
+        height: 100px;
+        margin-left: -1%;
+        padding-left: 2%;
+        padding-top: 55px;
+        background-color: #3366cc;
+      }
+
+      #container {
+        width: 100%;
+        height: 300px;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+      }
+
+      form {
+        background-color: #3366cc;
+        padding-top: 2%;
+        width: 40%;
+        /* margin-top: 5%; */
+        margin-left: 8%;
+        height: 300px;
+        text-align: center;
+        align-items: center;
+        border: 1px solid #3366cc;
+        border-radius: 5px;
+
+        text-align: center;
+      }
+
+      #contact {
+        margin-top: -5%;
+        background-color: #3366cc;
+        width: 40%;
+        height: 240px;
+        margin-left: 37%;
+        border-radius: 10px;
+      }
+
+      #contact h2 {
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      input {
+        padding: 3%;
+        font-size: 1rem;
+        /* border-radius: 15px; */
+        text-align: center;
+        border: none;
+        font-family: sans-serif;
+      }
+
+      button {
+        color: white;
+        margin-top: 2%;
+        font-size: 1rem;
+        padding: 3%;
+        width: 200px;
+        height: 45px;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 7px;
+        background-color: #000000;
+      }
+
+      #e,
+      #a {
+        font-weight: 700;
+        color: white;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+      }
+
+      #hd2 {
+        color: white;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+
+      li {
+        color: white;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-weight: 750;
+      }
+
+      li li {
+        margin-left: 50%;
+        color: #000000;
+      }
+
+      input {
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="cont">
+      <h1 id="heading">Human Resource Management System</h1>
+    </div>
+    <!-- <h2 id="text">Please Login to Continue</h2> -->
+    <div id="container">
+      <form>
+        <label for="username" id="hd2">Kindly Login to Continue</label
+        ><br /><br />
+
+        <input type="radio" id="employee" name="selection" />
+        <label for="employee" id="e">Employee</label> &nbsp; &nbsp;
+        <input type="radio" id="admin" name="selection" checked />
+        <label for="admin" id="a">Admin</label><br />
+        <br />
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your Username"
+          required
+        /><br /><br />
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        /><br /><br />
+
+        <button type="button" onclick="getInfo()">Login</button>
+      </form>
+      <div id="contact">
+        <h2>Contact Us:</h2>
+        <ul>
+          <li>
+            Deepam Asnani
+            <ul>
+              <li>+91 8979261311</li>
+            </ul>
+          </li>
+          <br />
+          <li>
+            Devendra Srivastava
+            <ul>
+              <li>+91 7417604406</li>
+            </ul>
+          </li>
+          <br />
+          <li>
+            Krishan Chandra Pandey
+            <ul>
+              <li>+91 9350051303</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

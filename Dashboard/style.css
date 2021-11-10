@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+#header {
+  display: flex;
+  flex-direction: row;
+  background-color: #3366cc;
+  padding: 30px;
+}
+#header h1 {
+  margin-left: 0%;
+  margin-top: 1%;
+  color: white;
+  font-size: 2rem;
+  font-family: sans-serif;
+  margin-bottom: 35px;
+}
+#logout {
+  margin-top: 2%;
+  margin-left: 69%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+.left {
+  box-sizing: border-box;
+  /* border: 2px solid black; */
+  width: 22vw;
+  height: 200vh;
+  background-color: #bcd0f7;
+  border-top: none;
+}
+.left h2 {
+  text-align: center;
+  /* text-decoration: underline; */
+  margin: 12%;
+  margin-left: 6.5%;
+  font-size: 35px;
+  color: black;
+}
+.left ul {
+  list-style: none;
+  margin: 16% 12%;
+}
+.left ul li {
+  margin-bottom: 24%;
+  font-size: 25px;
+  color: black;
+}
+.left ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.left ul div:hover {
+  background-color: #3366cc;
+  width: 180px;
+  border-radius: 12px;
+  font-size: 30px;
+  color: black;
+}
+
+.left ul div li a:hover {
+  font-size: x-large;
+  color: white;
+  margin-left: 7px;
+}
+#section {
+  display: flex;
+  flex-direction: row;
+}
+#cards {
+  display: flex;
+  flex-direction: row;
+  margin-left: 7%;
+}
+.square {
+  height: 145px;
+  width: 329px;
+  background-color: #bcd0f7;
+  border-radius: 8px;
+  color: black;
+  font-family: sans-serif;
+}
+#card1 {
+  margin-left: -5%;
+  margin-top: 50px;
+}
+#card2 {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+#card3 {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.square h1 {
+  margin-top: 10px;
+  margin-left: 7px;
+}
+.square h3 {
+  margin-top: 15px;
+  margin-left: 7px;
+}
+#people {
+  font-size: 85px;
+  margin-left: 200px;
+  margin-top: -35px;
+  color: #3366cc;
+}
+.square:hover {
+  height: 200px;
+  transition: 0.3s;
+}
+#piechart {
+  margin-left: 20%;
+  margin-top: -75%;
+}
+#columnchart_values {
+  margin-left: 54%;
+  margin-top: -37%;
+}
+a {
+  text-decoration: none;
+}
+#dash {
+  text-decoration: none;
+  color: black;
+}
