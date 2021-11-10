@@ -14,7 +14,7 @@ btn.addEventListener('click',function(){
     btn.style.visibility = "hidden";
     btn.style.marginTop = "4%";
 
-    document.getElementById('dash').style.marginLeft = "-1%";
+    document.getElementById('dash').style.marginLeft = "7%";
   
  
   
@@ -28,7 +28,7 @@ close.addEventListener('click',()=>{
     flag = false;
     btn.style.visibility = "visible";
 
-    document.getElementById('dash').style.marginLeft = "-30%";
+    document.getElementById('dash').style.marginLeft = "-15%";
 })
 
 function readFom() {
